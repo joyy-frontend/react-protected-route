@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
+import Error from './pages/Error';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import MyPage from './pages/MyPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RecoilRoot>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/login' element={<Login />}/>
+          <Route path='/mypage' element={<MyPage />}/>
+          <Route path='/404' element={<Error />}/>
+          <Route path='/*' element={<Navigate to={'/404'}/>}/>
+        </Routes>
+      </BrowserRouter>
+    </RecoilRoot>
   );
 }
-
 export default App;
+
