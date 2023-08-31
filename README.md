@@ -19,4 +19,4 @@ npm run build 빌드를 진행합니다.
 **스타일링**<br>
 <img src="https://img.shields.io/badge/styled components-DB7093?style=flat-square&logo=styled-components&logoColor=white"/>
 
-<img src="https://github.com/rhkk7157/react-protected-route/assets/50208120/b34e5939-b302-463d-8b0c-ca74538d6ed2">
+<img src="https://github.com/rhkk7157/react-protected-route/assets/50208120/4b93bbac-2c88-43ea-b862-3c1015577b42">
