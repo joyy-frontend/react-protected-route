@@ -3,7 +3,7 @@ import React from 'react'
 const MyPage = () => {
   return (
     <div>
-      MyPage
+      ID: {localStorage.getItem('userId')}
     </div>
   )
 }

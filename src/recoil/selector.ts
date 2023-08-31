@@ -1,8 +1,7 @@
 import { selector } from 'recoil';
-import { myNewAtom } from './atom';
+import { accessTokenAtom } from './atom';
 
-export const myNewSelector = selector({
-  key: 'myNewSelector',
-  get: ({get}) => get(myNewAtom),
-  set: ({set}, newValue) => set(myNewAtom, newValue),
-});
+export const isLoginSelector = selector({
+  key: 'isLoginSelector',
+  get: ({ get }) => !!get(accessTokenAtom)
+})
