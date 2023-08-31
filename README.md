@@ -3,6 +3,9 @@
 ## 개발환경
 ### `Node.js version`
 16.14.0
+### `React version`
+18.2.0
+
 ### `npm start`
 npm start 실행됩니다.
 
