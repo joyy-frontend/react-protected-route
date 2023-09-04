@@ -14,6 +14,7 @@ npm run build 빌드를 진행합니다.
 
 
 ## Tools
+### React, React-router, recoil 사용
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/React_router-CA4245?style=flat-square&logo=react-router&logoColor=white"/> 
 <br>
 
